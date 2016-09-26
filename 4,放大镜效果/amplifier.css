@@ -1,0 +1,8 @@
+/*放大镜效果*/
+.amplifier{position: relative;}
+.amplifier .small{width:400px;height: 400px;}
+.amplifier .small img{width:400px;height:400px;}
+.amplifier .layer{width:100px;height:100px;position: absolute;background: blue;opacity: 0.2;left:0;top:0;}
+.amplifier .layer:hover{cursor:move;}
+.amplifier .big{position: absolute;left:400px;top:0;display: none;width:400px;height:400px;overflow: hidden;}
+.amplifier .big img{width:800px;height:800px;position: absolute;left:0;top:0}

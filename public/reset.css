@@ -1,0 +1,36 @@
+html,body,div,p,h1,ul,li,ol,h2,h3,h4,h5,h6,dl,dt,dd,table,tr,th,td input,textarea,fieldset legend{margin:0;padding:0;font-size: 14px;color:#444;font-weight: normal;font-family: "Microsoft Yahei";}
+a{text-decoration: none;color:#444;font-family: "Microsoft Yahei";}
+li{list-style:none}
+/*公共样式*/
+/*宽，高*/
+.w100{width:100%}
+.w1170{width:1170px}
+/*清除浮动等公共样式*/
+.clearfix:after{content:'';display:block;height:0;clear:both;overflow:hidden}
+.clearfix:before{content:'';display:block;height:0;clear:both;overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.abs{position: absolute;}
+.rel{position: relative;}
+.fix{position: fixed;}
+.center{margin:0 auto;}
+.tc{text-align: center;}
+/*margin;padding;*/
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.mb10{margin-bottom: 10px;}
+.ml0{margin-left: 0!important;}
+.mr0{margin-right:0!important;}
+.ml10{margin-left: 10px!important;}
+.ml30{margin-left: 30px!important;}
+.ml40{margin-left: 40px!important;}
+.br0{border-right:none!important}
+.pb16{padding-bottom: 16px !important;}
+.pb32{padding-bottom:32px!important;}
+/*color*/
+.c5{color:#555}
+.cb{color:#0081ce;}
+.f14{font-size: 14px;}
+/*隐藏显示*/
+.hide{display:none}
+.show{display: block;}

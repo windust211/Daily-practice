@@ -1,0 +1,9 @@
+.scrollF{width:100%;position:relative;overflow-y:hidden}
+.scrollF .page{text-align: center;font-size: 40px;font-weight: bold;color:#fff}
+.scrollF .tab{position:fixed;height:100px;top:50%;margin-top:-50px;text-align: center;margin-right:20px}
+.scrollF .tab li{width:15px;height:15px;margin-bottom:5px;border-radius:50%;background:#fff;}
+.scrollF .tab .on{background:yellow}
+.scrollF .tab li{position:relative}
+.scrollF .tab li:hover{cursor:pointer}
+.scrollF .tab li p{position: absolute;left:-30px;line-height: 10px;top:-15px;display:none;width:12px;line-height: 20px;color:#fff}
+.scrollF .tab li:hover p{display:block}
