@@ -1,3 +1,2 @@
-# 之前做过的医疗网站，其他的域名变了，不能访问了
-http://www.goubus.net/
-
+# Daily practice
+1，之前做过的医疗网站，其他的域名变了，不能访问了 http://www.goubus.net/
