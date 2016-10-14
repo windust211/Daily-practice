@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组去重</title>
+</head>
+<body>
+<script type="text/javascript">
+	if(typeof Array.prototype.dedouble !== 'function'){
+			Array.prototype.dedouble = function (){
+				// 定义一个空对象和一个空数组，空数组用来存储不重复的项，空对象，用来进行判断
+				var json = {};
+				var arr = [];
+				// 循环变量每个数组实例，进行判断
+				for(var i=0; i<this.length; i++){
+					// 把实例数组的某个项作为json的键，判断是否重复
+					// **因为空数组,初始json[this[i]]是undefined,即false,被存到了arr数组里面，并把这项保存成{2:1}这个格式（以第一项为例）
+					// 判断是否重复，只需要判断这个键值是否为1即可（如果是1即是true，不会被存入arr中）；
+					if(!json[this[i]]){
+						arr.push(this[i]);
+						json[this[i]] = 1;
+					}
+				};
+				// 把去重后的数组返回；注：这个复制了一个新数组，不对原数组进行操作；
+				return arr;
+		}
+	}
+
+	var a = [2,3,3,2,'hello','hello','age'];
+	alert(a.dedouble())
+	// 这个是方法是加载对象的原型链上，每个实例都会继承，但是最好是在添加之前进行判断，以免复写对象本身已有方法；
+</script>
+</body>
+</html>
